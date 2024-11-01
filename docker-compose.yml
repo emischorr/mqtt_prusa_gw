@@ -1,0 +1,12 @@
+version: "2"
+services:
+  mqtt_prusa_gw:
+    image: emischorr/mqtt_prusa_gw:latest
+    restart: unless-stopped
+    environment:
+      - PRUSA_IP=
+      - PRUSA_PW=
+      - MQTT_HOST=
+      - MQTT_PORT=1883
+      - MQTT_USER=
+      - MQTT_PW=
